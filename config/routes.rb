@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :wikis, path: 'wiki', param: :name
+  resources :wikis, path: '/', param: :name
 end
