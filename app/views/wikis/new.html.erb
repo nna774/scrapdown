@@ -1,13 +1,13 @@
 ないよー つくる？
 
 <%= form_for :wiki, url: wikis_path do |f| %>
-    <%= f.fields_for @name do |b| %>
-      <%= b.text_field :name, required: true %>
-    <% end %>
+  <%= f.fields_for @name do |b| %>
+    <%= b.text_field :name, required: true %>
+  <% end %>
 
-    <%= f.fields_for @page do |b| %>
-      <%= b.text_area :content %>
-    <% end %>
+  <%= f.fields_for @page do |b| %>
+    <%= b.text_area :content %>
+  <% end %>
 
-    <%= f.submit %>
+  <%= f.submit %>
 <% end %>
