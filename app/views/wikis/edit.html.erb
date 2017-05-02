@@ -1,0 +1,13 @@
+<%= form_for :wiki, url: { action: 'update' }, method: :patch do |f| %>
+  <%= f.fields_for @name do |b| %>
+    <%= b.text_field :name, required: true %>
+    <%= b.hidden_field :id %>
+  <% end %>
+
+  <%= f.fields_for @page do |b| %>
+    <%= b.text_area :content %>
+    <%= b.hidden_field :id %>
+  <% end %>
+
+  <%= f.submit %>
+<% end %>
