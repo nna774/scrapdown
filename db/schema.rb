@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170429145542) do
+ActiveRecord::Schema.define(version: 20170507082017) do
 
   create_table "names", force: :cascade do |t|
     t.string   "name"
@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170429145542) do
     t.integer  "wiki_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "parent"
   end
 
   create_table "wikis", force: :cascade do |t|
